@@ -6,31 +6,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiLotWW-cviAhUHw1QKHf_nCDQQjRx6BAgBEAU&url=http%3A%2F%2Fonpicture.pw%2Flouis-tomlinson-symbol.html&psig=AOvVaw3GjmgHim0iVOTkcNnz-D6Y&ust=1559604372504294">
-    <title>Sammie Jiang</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500&display=swap">
+    <link rel="icon" href="favicon-normal.png">
+    <title>Sammie Jiang - IPS Analyst</title>
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          LinkedIn & Instagram & Spotify
-        </div>
-        <div class="col-md-4">
-        </div>
-        <div class="col-md-4">
-          about & projects & research & music
+    <div class="main">
+      <div class="row-header flex-nowrap">
+        <div></div>
+        <div class="menu">
+          <ul>
+            <li><span><a href="Resume_SammieJiang.pdf" target="_blank">Resume</a></span></li>
+          </ul>
         </div>
       </div>
-      <div class="row">
-        Content
+      <div class="row-body-1 flex-nowrap">
+        <div class="profile-image">
+          <img src="profile_image.png" class="profile-normal">
+          <img src="profile_image_heart.png" class="profile-heart show-on-scroll">
+        </div>
+        <div class="about">
+          <h1>Sammie Jiang</h1>
+          <h2>Researching communication protocols, reverse engineering, and developing solutions for security event management in ICS Industries. Always playing techno, sometimes baking bread.</h2>
+        </div>
       </div>
-      <div class="row">
-        Footer
+      <div class="row-body-2 flex-nowrap">
+        <div class="experience">
+          <h1>Experience</h1>
+        </div>
+        <div class="experience-list">
+          <ul>
+            <li>Fortinet - IPS Analyst</li>
+            <li>UBC SPPH - Full stack developer</li>
+            <li>Global Relay - Frontend developer co-op</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-body-3 flex-nowrap">
+        <div class="experience">
+          <h1>Skills</h1>
+        </div>
+        <div class="experience-list">
+          <ul>
+            <li>FE - ReactJS, React Native, Ext JS</li>
+            <li>BE - Python, Java, Ruby on Rails, C</li>
+            <li>DB - SQL, PostgreSQL</li>
+            <li>RE - OllyDbg, IDA, Wireshark, Fiddler</li>
+          </ul>
+        </div>
+      </div>
+      <div class="row-footer flex-nowrap">
+        <div class="location">
+          <h3>Vancouver, Canada</h3>
+        </div>
+        <div class="social-media">
+          <a href="https://www.instagram.com/rossfromfr13nds/" target="_blank"><img src="instagram.svg"></a>
+          <a href="https://www.linkedin.com/in/jiangsammie/" target="_blank"><img src="linkedin.svg"></a>
+          <a href="jiangsammie@gmail.com" target="_blank"><img src="mail.svg"></a>
+          <a href="https://github.com/sammiej" target="_blank"><img src="github.svg"></a>
+        </div>
       </div>
     </div>
 
+    <script>
+      window.addEventListener('scroll', function() {
+        var elementsToShow = document.querySelectorAll('.show-on-scroll');
+        elementsToShow.forEach(function (element) {
+          if (window.scrollY == 0) {
+            element.classList.remove('is-visible');
+          } else {
+            element.classList.add('is-visible');
+          }
+        });
+      });
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
