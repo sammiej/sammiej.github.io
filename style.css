@@ -5,8 +5,6 @@
 
 .main {
   margin-top: 80px;
-  margin-right: 32px;
-  margin-left: 32px;
   min-height: 100vh;
   max-width: 100%;
 }
@@ -21,16 +19,20 @@ a:hover {
   text-decoration: none;
 }
 
-hr {
-  width: 85%; /*84%*/
-}
-
 ul {
   list-style: none;
   margin: 0;
   padding-inline-start: 0;
 }
 
+@media screen and (max-width: 479px) {
+  .main {
+    margin-top: 60px;
+  }
+  .row-header, .row-body-1, .row-body-2, .row-body-3 {
+    width: 95%
+  }
+}
 
 /* Page 1 Header */
 .row-header {
@@ -114,6 +116,7 @@ span:hover:after {
 /* Page 1 Body  - About */
 .row-body-1 {
   display: flex;
+  flex-wrap: wrap;
   padding-top: 208px;
   padding-bottom: 290px;
   width: 85%;
@@ -148,6 +151,7 @@ span:hover:after {
   width: 15%;
   min-width: 100px;
   max-width: 308px;
+  margin-bottom: 20px;
 }
 
 .about {
@@ -158,7 +162,6 @@ span:hover:after {
   font-size: 48px;
   font-weight: 500;
   line-height: 64px;
-  margin-top: 3px;
   margin-bottom: 12px;
 }
 
@@ -181,23 +184,30 @@ span:hover:after {
 
 @media screen and (max-width: 767px) {
   .about h1 {
-    font-size: 32px;
-    line-height: 42px;
+    font-size: 34px;
+    line-height: 41px;
   }
   .about h2 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 27px;
   }
 }
 
 @media screen and (max-width: 479px) {
+  .row-body-1 {
+    padding-top: 80px;
+    padding-bottom: 120px;
+  }
+  .about {
+    width: 100%;
+  }
   .about h1 {
-    font-size: 24px;
+    font-size: 28px;
     line-height: 36px;
   }
   .about h2 {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -220,36 +230,6 @@ span:hover:after {
   margin-right: 2%;
 }
 
-@media screen and (max-width: 991px) {
-  .experience h1 {
-    font-size: 28px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .experience h1 {
-    font-size: 24px;
-  }
-  .experience {
-    margin-bottom: 5px;
-  }
-  .experience, .experience-list {
-    width: 100%;
-  }
-  .experience-list li {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .experience h1 {
-    font-size: 20px;
-  }
-  .experience-list li {
-    font-size: 12px;
-  }
-}
-
 .experience-list ul {
   display: inline-block;
   text-align: left;
@@ -267,9 +247,72 @@ span:hover:after {
   background-color: #F1EFEF;
 }
 
+@media screen and (max-width: 991px) {
+  .row-body-2 {
+    padding-top: 158px;
+    padding-bottom: 103px;
+  }
+  .row-body-3 {
+    padding-top: 103px;
+    padding-bottom: 158px;
+  }
+  .experience h1 {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .row-body-2 {
+    padding-top: 122px;
+    padding-bottom: 80px;
+  }
+  .row-body-3 {
+    padding-top: 80px;
+    padding-bottom: 122px;
+  }
+  .experience h1 {
+    font-size: 24px;
+  }
+  .experience {
+    margin-bottom: 15px;
+  }
+  .experience, .experience-list {
+    width: 100%;
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+  .experience-list li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .row-body-2 {
+    padding-top: 77px;
+    padding-bottom: 50px;
+  }
+  .row-body-3 {
+    padding-top: 50px;
+    padding-bottom: 77px;
+    margin-bottom: 60px;
+  }
+  .experience, .experience-list {
+    margin-left: 6%;
+    margin-right: 6%;
+  }
+  .experience h1 {
+    font-size: 20px;
+  }
+  .experience-list li {
+    font-size: 14px;
+  }
+}
+
 /* Footer */
 .row-footer {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 80px;
   width: 85%;
   margin: auto;
@@ -284,24 +327,6 @@ span:hover:after {
   font-weight: 400;
   line-height: 28px;
   margin-bottom: 0;
-}
-
-@media screen and (max-width: 991px) {
-  .location h3 {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .location h3 {
-    font-size: 12px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .location h3 {
-    font-size: 10px;
-  }
 }
 
 .social-media {
@@ -319,24 +344,17 @@ span:hover:after {
   max-height: 18px;
 }
 
-
-@media screen and (max-width: 991px) {
-  .social-media img {
-    padding-left: 16px;
-    max-height: 14px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .social-media img {
-    padding-left: 8px;
-    max-height: 12px;
-  }
-}
-
 @media screen and (max-width: 479px) {
+  .row-footer {
+    padding-bottom: 60px;
+  }
+  .location, .social-media {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
   .social-media img {
-    padding-left: 4px;
-    max-height: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 }
