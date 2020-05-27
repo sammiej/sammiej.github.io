@@ -351,10 +351,12 @@ span:hover:after {
   .location, .social-media {
     width: 100%;
     text-align: center;
-    margin-bottom: 10px;
+  }
+  .location {
+    margin-bottom: 15px;
   }
   .social-media img {
-    padding-left: 12px;
-    padding-right: 12px;
+    padding-left: 13px;
+    padding-right: 13px;
   }
 }
