@@ -348,6 +348,16 @@ span:hover:after {
   filter: invert(40%);
 }
 
+@media screen and (max-width: 767px) {
+  .location h3 {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .social-media img {
+    max-height: 18px;
+  }
+}
+
 @media screen and (max-width: 479px) {
   .row-footer {
     padding-bottom: 60px;
